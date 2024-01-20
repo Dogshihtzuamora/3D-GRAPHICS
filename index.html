@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <title>Blender da shop kkk</title>
+</head>
+<body>
+    <div id="buttons-container">
+        <button onclick="adicionarForma('quadrado')">Quadrado</button>
+          <button onclick="mostrarAlerta()">Criador</button>
+        <button onclick="adicionarForma('circulo')">Esfera</button>
+        <button onclick="adicionarForma('cilindro')">Cilíndro</button>
+        <button onclick="adicionarForma('triangulo')">Pirâmide</button>
+        <button onclick="adicionarPlano()">Adicionar Plano</button>
+        <button onclick="girarObjeto()">Girar Objeto</button>
+        <button onclick="moverObjeto()">Mover Objeto</button>
+        <button onclick="adicionarLuz()">Adicionar Luz</button>
+        <button onclick="adicionarSombra()">Adicionar Sombra</button>
+        <button onclick="mostrarFormas()">Mostrar Formas</button>
+        <button onclick="mostrarMovimento()">Movimento</button>
+        <button onclick="exportarCena()">Exportar Cena</button>
+        <button onclick="importarCena()">Importar Cena</button>
+    </div>
+
+    <div id="color-picker">
+        <input type="color" id="corObjeto" onchange="mudarCorObjeto()">
+    </div>
+
+    <div id="joystick">
+        <div id="joystick-thumb"></div>
+    </div>
+
+    <div id="movimento-buttons">
+        <button onclick="moverObjetoDireita()">Direita</button>
+        <button onclick="moverObjetoEsquerda()">Esquerda</button>
+        <button onclick="moverObjetoCima()">Cima</button>
+        <button onclick="moverObjetoBaixo()">Baixo</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
